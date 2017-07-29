@@ -34,8 +34,8 @@ def RowGenerator(number_of_rows, row_length):
         rows_list.append(group_list)
     return rows_list
 
-#Generates the Dataframe using Pandas, applies header titles, print the matrix, and computes 
-#the standard deviation for each column group
+# Generates the Dataframe using Pandas, applies header titles, print the matrix, and computes 
+# the standard deviation for each column group
 def DataFrameGenerator(Data, Headers):
     df = pd.DataFrame(np.array(data_set), columns=headers)
     print(df)
