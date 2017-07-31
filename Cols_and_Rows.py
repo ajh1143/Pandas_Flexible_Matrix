@@ -7,9 +7,9 @@ import string
 # Prompts the user to enter the desired number of columns and rows, returns both.
 def UserPrompt():
     print("Hello, User.")
-    user_response1 = int(input(print("\nPlease enter the number of rows in your dataset")))
-    user_response2 = int(input(print("\nPlease enter the number of columns in your dataset")))
-    return user_response1, user_response2
+    user_rows = int(input(print("\nPlease enter the number of rows in your dataset")))
+    user_columns = input(print("\nPlease enter the number of columns in your dataset")))
+    return user_rows, user_columns
 
 
 # Generates titles for column headers using uppercase 'A-Z' letters, returns as a list
