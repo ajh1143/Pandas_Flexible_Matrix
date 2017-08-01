@@ -13,7 +13,7 @@ def UserPrompt():
     return user_rows, user_columns
 
 # Generates a list of header titles based on the entered number of columns, in the form of A-Z, AA-ZZ, AAA-ZZZ etc
-def ColumnGenerator():
+def ColumnHeaderGenerator():
     columns_headers = string.ascii_uppercase
     for each in count(1):
         for all in product(columns_headers, repeat=each):
@@ -46,5 +46,5 @@ if __name__ == '__main__':
     print("Rows = " + str(rows))
     print("Columns = " + str(cols))
     data_set = RowGenerator(rows, cols)
-    headers = list(islice(ColumnGenerator(), cols))
+    headers = list(islice(ColumnHeaderGenerator(), cols))
     DataFrameGenerator(data_set, headers)
