@@ -1,4 +1,4 @@
-# Pandas_Matrix
+# Pandas_Flexible_Matrix
 
 
 1)Generates a matrix of randomly generated ints where the user defines the number of columns and rows.
