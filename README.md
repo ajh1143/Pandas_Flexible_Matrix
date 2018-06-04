@@ -51,7 +51,7 @@ class MatrixPermutation(object)
     def DataFrameGenerator(self, Data, Headers):
         df = pd.DataFrame(np.array(Data), columns=Headers)
         print(df)
-    print(np.std(df).round(2))
+        print(np.std(df).round(2))
 ```
 
 #### Running it
